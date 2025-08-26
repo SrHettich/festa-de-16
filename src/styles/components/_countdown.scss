@@ -1,0 +1,41 @@
+@use '../variables';
+
+.countdown{
+    display: flex;
+    gap: 16px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    align-items: center;
+
+    &__item{
+        font-size: 14px;
+        border: 2px solid variables.$textColor;
+        border-radius: 10px;
+        height: 90px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p{
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 32px;
+        }
+    }
+
+        @media (max-width: 640px){
+            gap: 8px;
+
+            &__item{
+                height: 75px;
+                width: 85px;
+                font-size: 12px;
+
+                &:last-child{
+                    font-size: 10px;
+                }
+            }
+        }
+}
