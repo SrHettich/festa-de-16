@@ -1,8 +1,18 @@
 @use '../variables';
 
+.box__button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+}
+
 .button{
     padding: 12px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
@@ -15,13 +25,12 @@
         line-height: 32px;
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
             display: block;
             width: 100%;
         }
 
-        @media (min-width:641px) and ( max-width: 1024px) {
-            display: flex;
-            align-items: center;
+        @media (min-width:769px) and ( max-width: 1024px) {
+            font-size: 12px;
         }
 }

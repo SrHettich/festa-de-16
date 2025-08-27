@@ -15,7 +15,7 @@
 }
 
 .container{
-    max-width: 960px;
+    max-width: 1080px;
     width: 100%;
     margin: 0 auto;
 
@@ -23,7 +23,7 @@
         max-width: 80%;
     }
 
-    @media (max-width:1024px) {
+    @media (max-width:1080px) {
         max-width: 90%;
     }
 }
